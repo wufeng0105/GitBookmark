@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "GitBookmark",
+  "version": "1.0.0",
+  "description": "收藏和管理 GitHub 仓库，由 AI 基于 README 生成简体中文摘要、分类与标签",
+  "permissions": ["storage", "activeTab", "contextMenus"],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://api.deepseek.com/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "GitBookmark"
+  },
+  "options_ui": {
+    "page": "manage.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "src/background/index.ts",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

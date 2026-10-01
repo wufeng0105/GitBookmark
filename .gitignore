@@ -1,0 +1,23 @@
+node_modules
+dist
+dist-zip
+*.local
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Vite 构建缓存
+.vite
+
+# 编辑器配置
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# CodeGraph 本地索引
+.codegraph/
+
+# ZCode 会话产物
+.zcode/
+.zcodeignore
